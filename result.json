@@ -3,21 +3,21 @@
   "type": "object",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "properties": {
-    "cyclist_stats": {
-      "title": "cyclist_stats",
+    "employee_by_id": {
+      "title": "employee_by_id",
       "type": "object",
       "properties": {
-        "basics": {
-          "type": "object",
-          "properties": {
-            "birthday": { "type": "string", "format": "timestamp" },
-            "nationality": { "type": "string" },
-            "weight": { "type": "string" },
-            "height": { "type": "string" }
-          }
-        },
-        "id": { "type": "string", "format": "uuid" },
-        "lastname": { "type": "string" }
+        "id": { "type": "number" },
+        "name": { "type": "string" },
+        "position": { "type": "string" }
+      }
+    },
+    "array_test": {
+      "title": "array_test",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number" },
+        "names": { "type": "array", "items": { "type": "string" } }
       }
     },
     "cyclist_category": {
@@ -44,21 +44,21 @@
         "points": { "type": "number" }
       }
     },
-    "array_test": {
-      "title": "array_test",
+    "cyclist_stats": {
+      "title": "cyclist_stats",
       "type": "object",
       "properties": {
-        "id": { "type": "number" },
-        "names": { "type": "array", "items": { "type": "string" } }
-      }
-    },
-    "employee_by_id": {
-      "title": "employee_by_id",
-      "type": "object",
-      "properties": {
-        "id": { "type": "number" },
-        "name": { "type": "string" },
-        "position": { "type": "string" }
+        "basics": {
+          "type": "object",
+          "properties": {
+            "birthday": { "type": "string", "format": "timestamp" },
+            "nationality": { "type": "string" },
+            "weight": { "type": "string" },
+            "height": { "type": "string" }
+          }
+        },
+        "id": { "type": "string", "format": "uuid" },
+        "lastname": { "type": "string" }
       }
     }
   }
