@@ -38,8 +38,6 @@ class CassandraParser {
           }
         });
 
-        // return Object.fromEntries(getTableInitialSchema(columnSchemaMap, el));
-        // tableNamesMap.set(el, Object.fromEntries(columnSchemaMap));
         tableNamesMap.set(
           el,
           Object.fromEntries(getInitialSchema(columnSchemaMap, el))
