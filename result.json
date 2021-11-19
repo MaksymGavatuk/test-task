@@ -1,0 +1,65 @@
+{
+  "title": "test_keyspace",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "cyclist_stats": {
+      "title": "cyclist_stats",
+      "type": "object",
+      "properties": {
+        "basics": {
+          "type": "object",
+          "properties": {
+            "birthday": { "type": "string", "format": "timestamp" },
+            "nationality": { "type": "string" },
+            "weight": { "type": "string" },
+            "height": { "type": "string" }
+          }
+        },
+        "id": { "type": "string", "format": "uuid" },
+        "lastname": { "type": "string" }
+      }
+    },
+    "cyclist_category": {
+      "title": "cyclist_category",
+      "type": "object",
+      "properties": {
+        "category": { "type": "string" },
+        "id": { "type": "string", "format": "uuid" },
+        "lastname": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "surname": {
+              "type": "object",
+              "properties": {
+                "FSDFDS": {
+                  "type": "object",
+                  "properties": { "FASDFDS": { "type": "string" } }
+                }
+              }
+            }
+          }
+        },
+        "points": { "type": "number" }
+      }
+    },
+    "array_test": {
+      "title": "array_test",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number" },
+        "names": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "employee_by_id": {
+      "title": "employee_by_id",
+      "type": "object",
+      "properties": {
+        "id": { "type": "number" },
+        "name": { "type": "string" },
+        "position": { "type": "string" }
+      }
+    }
+  }
+}
